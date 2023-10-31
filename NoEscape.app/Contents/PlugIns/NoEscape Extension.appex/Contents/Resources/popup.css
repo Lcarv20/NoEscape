@@ -1,0 +1,156 @@
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    width: 250px;
+    padding: 6px;
+    font-family: system-ui;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+a {
+    height: auto;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.title .slide-label {
+    color: #1f1f1f;
+}
+
+.slide-label {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.bmc-btn {
+    width: 75%;
+}
+
+.switch {
+    display: -webkit-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.description {
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.note {
+    font-size: 12px;
+    color: #3b3b3b;
+}
+
+kbd {
+    border-radius: 2px;
+    font-family: monospace;
+    border: 1px solid gray;
+    padding: 1px 2px;
+    margin: 2px;
+}
+
+/* CHECKBOX */
+.tgl {
+  display: none;
+}
+.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+  box-sizing: border-box;
+}
+.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+  background: none;
+}
+.tgl + .tgl-btn {
+  outline: 0;
+  display: block;
+  width: 2em;
+  height: 1em;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+.tgl + .tgl-btn:after, .tgl + .tgl-btn:before {
+  position: relative;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+}
+.tgl + .tgl-btn:after {
+  left: 0;
+}
+.tgl + .tgl-btn:before {
+  display: none;
+}
+.tgl:checked + .tgl-btn:after {
+  left: 50%;
+}
+
+.tgl-ios + .tgl-btn {
+  background: #d8d8d8;
+  border-radius: 2em;
+  padding: 0.5px;
+  transition: all 0.4s ease;
+  border: 1px solid #d4d4d4;
+}
+.tgl-ios + .tgl-btn:after {
+  border-radius: 50%;
+  background: #fbfbfb;
+  transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 0 rgba(0, 0, 0, 0.08);
+}
+.tgl-ios + .tgl-btn:hover:after {
+  will-change: padding;
+}
+.tgl-ios + .tgl-btn:active {
+  box-shadow: inset 0 0 0 2em #e8eae9;
+}
+.tgl-ios + .tgl-btn:active:after {
+  padding-right: 0.8em;
+}
+.tgl-ios:checked + .tgl-btn {
+  background: -apple-system-control-accent;
+}
+.tgl-ios:checked + .tgl-btn:active {
+  box-shadow: none;
+}
+.tgl-ios:checked + .tgl-btn:active:after {
+  margin-left: -0.8em;
+}
+
+@media (prefers-color-scheme: dark) {
+    .note {
+        font-size: 12px;
+        color: #e0e0e0;
+    }
+    
+    .tgl-ios + .tgl-btn {
+      background: #414141;
+      border-radius: 2em;
+      padding: 0.5px;
+      transition: all 0.4s ease;
+      border: 1px solid #565656;
+    }
+    
+    .title .slide-label {
+        color: #ededed;
+    }
+}
