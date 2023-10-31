@@ -10,7 +10,7 @@
 
 ### Installation
 
-- <a id="raw-url" href="https://raw.githubusercontent.com/Lcarv20/NoEscape/master/NoEscape.app">Download</a> NoEscape.app
+- <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/Lcarv20/NoEscape/tree/master/NoEscape.app">Download</a> NoEscape.app
 - Move it to your Applications folder
 - Double click it
 
